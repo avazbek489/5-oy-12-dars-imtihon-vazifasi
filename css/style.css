@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, Arial, Helvetica;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: black;
+    color: red;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #cff0f0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    padding: 20px;
+}
+
+#form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form__container {
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+input {
+    font-family: "Roboto";
+}
+
+.header-img {
+    width: 100%;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#logo {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.tag {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.select {
+    display: flex;
+    gap: 10px;
+}
+
+.select-item {
+    flex: 1;
+}
+
+.skill {
+    margin-top: 10px;
+}
+
+.check {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 130px;
+}
+
+.pro {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#btn {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    transform: scale(1.5);
+}
+
+#btn:hover {
+    background-color: #222;
+    transform: scale(1.01)
+}
+
+#btn:active {
+    background-color: #888;
+    transform: scale(0.99);
+}
+
+/* Card stillari */
+
+.card {
+    width: 1110px;
+    height: 152px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 15px 20px -5px #0D718226;
+    margin-bottom: 24px;
+    padding: 32px 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.info h6 {
+    font-family: "League Spartan";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16.56px;
+    text-align: left;
+    color: #5CA5A5;
+}
+
+.up h5 {
+    width: 51px;
+    height: 24px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "League Spartan";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    background-color: #5CA5A5;
+    color: #fff;
+}
+
+#tittle {
+    width: 79px;
+    height: 24px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "League Spartan";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    background-color: #2B3939;
+    color: #fff;
+}
+
+.up {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.posit h3 {
+    width: 255px;
+    height: 24px;
+    font-family: "League Spartan";
+    font-size: 22px;
+    font-weight: 700;
+    color: #2B3939;
+}
+
+.details ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.details ul li {
+    font-family: "League Spartan";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #7C8F8F;
+}
+
+.main {
+    margin-right: 232px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.day {
+    list-style: none;
+}
+
+.card img {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+
+}
+
+.level {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.vue {
+    padding: 5px 8px 3px 9px;
+    border-radius: 4px;
+    background-color: rgba(92, 165, 165, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: League Spartan;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #5CA5A5;
+}
+
+.remove {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 3px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.5s ease;
+}
+
+.remove:hover {
+    background-color: rgb(241, 27, 27);
+    transform: scale(1.01);
+}
+
+.remove:active {
+    transform: scale(0.95);
+}
+
+#clear {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    margin-left: 900px;
+}
+
+#clear:hover {
+    background-color: #2980b9;
+}
+
+#clear:active {
+    background-color: #1c6692;
+    transform: scale(0.95);
+}
